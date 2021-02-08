@@ -13,6 +13,23 @@ public class Ducks {
         age=0;
     }
 
+    public String getColor()
+    {
+        return "color='"+color+"'";
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getAge() {
+        return "age='"+age+"'";
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     @Override
     public String toString() {
         return "Ducks{" +

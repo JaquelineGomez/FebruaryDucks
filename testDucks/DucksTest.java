@@ -16,6 +16,23 @@ class DucksTest {
         Ducks blankDuck = new Ducks();
         String expected = "Ducks{color='', age=0}";
         assertEquals(expected, blankDuck.toString());
+    }
 
+    @Test
+    void colorGetNSet()
+    {
+        Ducks blankDuck = new Ducks();
+        String expected= "color='yellow'";
+        blankDuck.setColor("yellow");
+        assertEquals(expected, blankDuck.getColor());
+    }
+
+    @Test
+    void ageGetNSet()
+    {
+        Ducks blankDuck = new Ducks();
+        String expected= "age='5'";
+        blankDuck.setAge(5);
+        assertEquals(expected, blankDuck.getAge());
     }
 }
