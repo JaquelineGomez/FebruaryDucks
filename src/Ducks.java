@@ -7,6 +7,12 @@ public class Ducks {
         this.age = age;
     }
 
+    public Ducks()
+    {
+        color="";
+        age=0;
+    }
+
     @Override
     public String toString() {
         return "Ducks{" +
